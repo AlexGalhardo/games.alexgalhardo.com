@@ -34,6 +34,7 @@
 
 ## ToDo v2
 - [ ] Refactor using [TailwindCSS](https://tailwindcss.com/)
+- [ ] Use <https://ui.shadcn.com/>
 - [ ] Refactor using [NextJS and SSR](https://nextjs.org/)
 - [ ] Create unit tests using [Jest for React](https://jestjs.io/docs/tutorial-react)
 - [ ] Create End to End Tests using [Playwright](https://playwright.dev/)
