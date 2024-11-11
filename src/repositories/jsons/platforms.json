@@ -1,0 +1,532 @@
+[
+	{
+		"id": 6,
+		"name": "PC (Microsoft Windows)",
+		"slug": "pc-microsoft-windows"
+	},
+	{
+		"id": 14,
+		"name": "Mac",
+		"slug": "mac"
+	},
+	{
+		"id": 13,
+		"name": "DOS",
+		"slug": "dos"
+	},
+	{
+		"id": 9,
+		"name": "PlayStation 3",
+		"slug": "playstation-3"
+	},
+	{
+		"id": 12,
+		"name": "Xbox 360",
+		"slug": "xbox-360"
+	},
+	{
+		"id": 8,
+		"name": "PlayStation 2",
+		"slug": "playstation-2"
+	},
+	{
+		"id": 11,
+		"name": "Xbox",
+		"slug": "xbox"
+	},
+	{
+		"id": 5,
+		"name": "Wii",
+		"slug": "wii"
+	},
+	{
+		"id": 20,
+		"name": "Nintendo DS",
+		"slug": "nintendo-ds"
+	},
+	{
+		"id": 149,
+		"name": "PC-9800 Series",
+		"slug": "pc-9800-series"
+	},
+	{
+		"id": 118,
+		"name": "FM Towns",
+		"slug": "fm-towns"
+	},
+	{
+		"id": 16,
+		"name": "Amiga",
+		"slug": "amiga"
+	},
+	{
+		"id": 48,
+		"name": "PlayStation 4",
+		"slug": "playstation-4"
+	},
+	{
+		"id": 49,
+		"name": "Xbox One",
+		"slug": "xbox-one"
+	},
+	{
+		"id": 3,
+		"name": "Linux",
+		"slug": "linux"
+	},
+	{
+		"id": 39,
+		"name": "iOS",
+		"slug": "ios"
+	},
+	{
+		"id": 34,
+		"name": "Android",
+		"slug": "android"
+	},
+	{
+		"id": 113,
+		"name": "OnLive Game System",
+		"slug": "onlive-game-system"
+	},
+	{
+		"id": 114,
+		"name": "Amiga CD32",
+		"slug": "amiga-cd32"
+	},
+	{
+		"id": 7,
+		"name": "PlayStation",
+		"slug": "playstation"
+	},
+	{
+		"id": 115,
+		"name": "Apple IIGS",
+		"slug": "apple-iigs"
+	},
+	{
+		"id": 75,
+		"name": "Apple II",
+		"slug": "apple-ii"
+	},
+	{
+		"id": 63,
+		"name": "Atari ST/STE",
+		"slug": "atari-stste"
+	},
+	{
+		"id": 78,
+		"name": "Sega CD",
+		"slug": "sega-cd"
+	},
+	{
+		"id": 130,
+		"name": "Nintendo Switch",
+		"slug": "nintendo-switch"
+	},
+	{
+		"id": 41,
+		"name": "Wii U",
+		"slug": "wii-u"
+	},
+	{
+		"id": 21,
+		"name": "Nintendo GameCube",
+		"slug": "nintendo-gamecube"
+	},
+	{
+		"id": 169,
+		"name": "Xbox Series X|S",
+		"slug": "xbox-series-xors"
+	},
+	{
+		"id": 116,
+		"name": "Acorn Archimedes",
+		"slug": "acorn-archimedes"
+	},
+	{
+		"id": 29,
+		"name": "Sega Mega Drive/Genesis",
+		"slug": "sega-mega-drivegenesis"
+	},
+	{
+		"id": 50,
+		"name": "3DO Interactive Multiplayer",
+		"slug": "3do-interactive-multiplayer"
+	},
+	{
+		"id": 15,
+		"name": "Commodore C64/128/MAX",
+		"slug": "commodore-c64128max"
+	},
+	{
+		"id": "383c6164-b82f-4e3a-b630-0631815996ce",
+		"name": "SteamVR",
+		"slug": "steamvr"
+	},
+	{
+		"id": 46,
+		"name": "PlayStation Vita",
+		"slug": "playstation-vita"
+	},
+	{
+		"id": 32,
+		"name": "Sega Saturn",
+		"slug": "sega-saturn"
+	},
+	{
+		"id": 38,
+		"name": "PlayStation Portable",
+		"slug": "playstation-portable"
+	},
+	{
+		"id": 23,
+		"name": "Dreamcast",
+		"slug": "dreamcast"
+	},
+	{
+		"id": 52,
+		"name": "Arcade",
+		"slug": "arcade"
+	},
+	{
+		"id": 4,
+		"name": "Nintendo 64",
+		"slug": "nintendo-64"
+	},
+	{
+		"id": 22,
+		"name": "Game Boy Color",
+		"slug": "game-boy-color"
+	},
+	{
+		"id": 167,
+		"name": "PlayStation 5",
+		"slug": "playstation-5"
+	},
+	{
+		"id": 65,
+		"name": "Atari 8-bit",
+		"slug": "atari-8-bit"
+	},
+	{
+		"id": "60f9c9a0-727a-4604-a9a1-7771643be3fb",
+		"name": "Atari 7800",
+		"slug": "atari-7800"
+	},
+	{
+		"id": 66,
+		"name": "Atari 5200",
+		"slug": "atari-5200"
+	},
+	{
+		"id": 26,
+		"name": "ZX Spectrum",
+		"slug": "zx-spectrum"
+	},
+	{
+		"id": 27,
+		"name": "MSX",
+		"slug": "msx"
+	},
+	{
+		"id": 25,
+		"name": "Amstrad CPC",
+		"slug": "amstrad-cpc"
+	},
+	{
+		"id": 35,
+		"name": "Sega Game Gear",
+		"slug": "sega-game-gear"
+	},
+	{
+		"id": 18,
+		"name": "Nintendo Entertainment System",
+		"slug": "nintendo-entertainment-system"
+	},
+	{
+		"id": 33,
+		"name": "Game Boy",
+		"slug": "game-boy"
+	},
+	{
+		"id": 64,
+		"name": "Sega Master System/Mark III",
+		"slug": "sega-master-systemmark-iii"
+	},
+	{
+		"id": 150,
+		"name": "Turbografx-16/PC Engine CD",
+		"slug": "turbografx-16pc-engine-cd"
+	},
+	{
+		"id": 99,
+		"name": "Family Computer",
+		"slug": "family-computer"
+	},
+	{
+		"id": 151,
+		"name": "TRS-80 Color Computer",
+		"slug": "trs-80-color-computer"
+	},
+	{
+		"id": 117,
+		"name": "Philips CD-i",
+		"slug": "philips-cd-i"
+	},
+	{
+		"id": 74,
+		"name": "Windows Phone",
+		"slug": "windows-phone"
+	},
+	{
+		"id": 37,
+		"name": "Nintendo 3DS",
+		"slug": "nintendo-3ds"
+	},
+	{
+		"id": 410,
+		"name": "Atari Jaguar CD",
+		"slug": "atari-jaguar-cd"
+	},
+	{
+		"id": 24,
+		"name": "Game Boy Advance",
+		"slug": "game-boy-advance"
+	},
+	{
+		"id": "9e880d88-7420-4ea1-8e5e-169e6525a48c",
+		"name": "TurboGrafx-16/PC Engine",
+		"slug": "turbografx-16pc-engine"
+	},
+	{
+		"id": 121,
+		"name": "Sharp X68000",
+		"slug": "sharp-x68000"
+	},
+	{
+		"id": "0f58c7cb-459a-4053-a05f-4b9f18a9d577",
+		"name": "PC-FX",
+		"slug": "pc-fx"
+	},
+	{
+		"id": "9056c910-650b-471e-8ff9-65db3df3ee2d",
+		"name": "Atari Jaguar",
+		"slug": "atari-jaguar"
+	},
+	{
+		"id": 82,
+		"name": "Web browser",
+		"slug": "web-browser"
+	},
+	{
+		"id": "9caecf06-b3b5-496c-85d5-6a06c203ed73",
+		"name": "Zeebo",
+		"slug": "zeebo"
+	},
+	{
+		"id": "6354f5b1-75f1-4842-a4de-4fd0df1ceddb",
+		"name": "Tapwave Zodiac",
+		"slug": "tapwave-zodiac"
+	},
+	{
+		"id": "64d8b528-aa5c-4d48-963b-4a8642a3e74c",
+		"name": "Nintendo PlayStation",
+		"slug": "nintendo-playstation"
+	},
+	{
+		"id": 58,
+		"name": "Super Famicom",
+		"slug": "super-famicom"
+	},
+	{
+		"id": 19,
+		"name": "Super Nintendo Entertainment System",
+		"slug": "super-nintendo-entertainment-system"
+	},
+	{
+		"id": 55,
+		"name": "Legacy Mobile Device",
+		"slug": "legacy-mobile-device"
+	},
+	{
+		"id": 51,
+		"name": "Family Computer Disk System",
+		"slug": "family-computer-disk-system"
+	},
+	{
+		"id": 170,
+		"name": "Google Stadia",
+		"slug": "google-stadia"
+	},
+	{
+		"id": 53,
+		"name": "MSX2",
+		"slug": "msx2"
+	},
+	{
+		"id": 72,
+		"name": "Ouya",
+		"slug": "ouya"
+	},
+	{
+		"id": 137,
+		"name": "New Nintendo 3DS",
+		"slug": "new-nintendo-3ds"
+	},
+	{
+		"id": 30,
+		"name": "Sega 32X",
+		"slug": "sega-32x"
+	},
+	{
+		"id": 42,
+		"name": "N-Gage",
+		"slug": "n-gage"
+	},
+	{
+		"id": "fdac8767-3708-46ab-83bf-a4d23a51a55c",
+		"name": "PC-8800 Series",
+		"slug": "pc-8800-series"
+	},
+	{
+		"id": "d35b6687-b163-469d-9d92-d7cdd12320d1",
+		"name": "FM-7",
+		"slug": "fm-7"
+	},
+	{
+		"id": 126,
+		"name": "TRS-80",
+		"slug": "trs-80"
+	},
+	{
+		"id": 306,
+		"name": "Satellaview",
+		"slug": "satellaview"
+	},
+	{
+		"id": 57,
+		"name": "WonderSwan",
+		"slug": "wonderswan"
+	},
+	{
+		"id": 134,
+		"name": "Acorn Electron",
+		"slug": "acorn-electron"
+	},
+	{
+		"id": 69,
+		"name": "BBC Microcomputer System",
+		"slug": "bbc-microcomputer-system"
+	},
+	{
+		"id": 159,
+		"name": "Nintendo DSi",
+		"slug": "nintendo-dsi"
+	},
+	{
+		"id": 377,
+		"name": "Plug & Play",
+		"slug": "plug-and-play"
+	},
+	{
+		"id": 385,
+		"name": "Oculus Rift",
+		"slug": "oculus-rift"
+	},
+	{
+		"id": 136,
+		"name": "Neo Geo CD",
+		"slug": "neo-geo-cd"
+	},
+	{
+		"id": 79,
+		"name": "Neo Geo MVS",
+		"slug": "neo-geo-mvs"
+	},
+	{
+		"id": 80,
+		"name": "Neo Geo AES",
+		"slug": "neo-geo-aes"
+	},
+	{
+		"id": 70,
+		"name": "Vectrex",
+		"slug": "vectrex"
+	},
+	{
+		"id": 416,
+		"name": "Nintendo 64DD",
+		"slug": "nintendo-64dd"
+	},
+	{
+		"id": 123,
+		"name": "WonderSwan Color",
+		"slug": "wonderswan-color"
+	},
+	{
+		"id": 84,
+		"name": "SG-1000",
+		"slug": "sg-1000"
+	},
+	{
+		"id": 68,
+		"name": "ColecoVision",
+		"slug": "colecovision"
+	},
+	{
+		"id": 59,
+		"name": "Atari 2600",
+		"slug": "atari-2600"
+	},
+	{
+		"id": 87,
+		"name": "Virtual Boy",
+		"slug": "virtual-boy"
+	},
+	{
+		"id": 478,
+		"name": "Panasonic M2",
+		"slug": "panasonic-m2"
+	},
+	{
+		"id": 165,
+		"name": "PlayStation VR",
+		"slug": "playstation-vr"
+	},
+	{
+		"id": 94,
+		"name": "Commodore Plus/4",
+		"slug": "commodore-plus4"
+	},
+	{
+		"id": 108,
+		"name": "PDP-11",
+		"slug": "pdp-11"
+	},
+	{
+		"id": 154,
+		"name": "Amstrad PCW",
+		"slug": "amstrad-pcw"
+	},
+	{
+		"id": 155,
+		"name": "Tatung Einstein",
+		"slug": "tatung-einstein"
+	},
+	{
+		"id": 96,
+		"name": "PDP-10",
+		"slug": "pdp-10"
+	},
+	{
+		"id": 93,
+		"name": "Commodore 16",
+		"slug": "commodore-16"
+	},
+	{
+		"id": 129,
+		"name": "Texas Instruments TI-99",
+		"slug": "texas-instruments-ti-99"
+	}
+]

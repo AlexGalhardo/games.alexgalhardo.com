@@ -1,0 +1,1727 @@
+[
+	{
+		"id": 21585,
+		"name": "MacPlay",
+		"slug": "macplay"
+	},
+	{
+		"id": 2350,
+		"name": "Electronic Arts",
+		"slug": "electronic-arts"
+	},
+	{
+		"id": 170405,
+		"name": "Take-Two Interactive",
+		"slug": "take-two-interactive"
+	},
+	{
+		"id": 1849,
+		"name": "Eidos Interactive",
+		"slug": "eidos-interactive"
+	},
+	{
+		"id": 19007,
+		"name": "Square Enix",
+		"slug": "square-enix"
+	},
+	{
+		"id": 18789,
+		"name": "Codemasters",
+		"slug": "codemasters"
+	},
+	{
+		"id": 95290,
+		"name": "Bethesda Softworks",
+		"slug": "bethesda-softworks"
+	},
+	{
+		"id": "ebf60b55-37ef-4cd7-93dc-b5de51dd287b",
+		"name": "ZeniMax Media",
+		"slug": "zenimax-media"
+	},
+	{
+		"id": 35762,
+		"name": "Feral Interactive",
+		"slug": "feral-interactive"
+	},
+	{
+		"id": 1838,
+		"name": "Interplay Entertainment",
+		"slug": "interplay-entertainment"
+	},
+	{
+		"id": "5de11c75-75ac-4dba-8b9b-3161660e2fc5",
+		"name": "Black Isle Studios",
+		"slug": "black-isle-studios"
+	},
+	{
+		"id": 23912,
+		"name": "Sir-tech Software",
+		"slug": "sir-tech-software"
+	},
+	{
+		"id": 3440,
+		"name": "Virgin Interactive Entertainment (Europe) Ltd.",
+		"slug": "virgin-interactive-entertainment-europe-ltd"
+	},
+	{
+		"id": 1826,
+		"name": "TalonSoft",
+		"slug": "talonsoft"
+	},
+	{
+		"id": 20591,
+		"name": "Activision",
+		"slug": "activision"
+	},
+	{
+		"id": "13a87182-3c95-46af-a56a-ec87681d3b31",
+		"name": "Edusoft",
+		"slug": "edusoft"
+	},
+	{
+		"id": "2f3a9739-9dcc-4a30-8e9d-390bd23081bd",
+		"name": "1C/Cenega",
+		"slug": "1ccenega"
+	},
+	{
+		"id": "f8907f31-2980-4e5d-8daf-dae46ee0a8da",
+		"name": "14 Degrees East",
+		"slug": "14-degrees-east"
+	},
+	{
+		"id": 1851,
+		"name": "Gathering of Developers",
+		"slug": "gathering-of-developers"
+	},
+	{
+		"id": 17932,
+		"name": "Rockstar Games",
+		"slug": "rockstar-games"
+	},
+	{
+		"id": 21722,
+		"name": "2K Games",
+		"slug": "2k-games"
+	},
+	{
+		"id": 6171,
+		"name": "Origin Systems",
+		"slug": "origin-systems"
+	},
+	{
+		"id": "6186a0bb-d058-4efd-b79d-8286c3094e31",
+		"name": "Hasbro Interactive",
+		"slug": "hasbro-interactive"
+	},
+	{
+		"id": 203661,
+		"name": "MicroProse Software, Inc.",
+		"slug": "microprose-software-inc"
+	},
+	{
+		"id": 1790,
+		"name": "Sierra On-Line",
+		"slug": "sierra-on-line"
+	},
+	{
+		"id": "8bbea44f-ade8-4326-96d4-f1b48f18cc4d",
+		"name": "Kixx",
+		"slug": "kixx"
+	},
+	{
+		"id": "d2c59380-eb70-4fbd-82a1-53befadd7ec4",
+		"name": "Sierra",
+		"slug": "sierra"
+	},
+	{
+		"id": "184ddca3-4dae-4a6a-b1d9-32e447989273",
+		"name": "JVC Musical Industries",
+		"slug": "jvc-musical-industries"
+	},
+	{
+		"id": 3069,
+		"name": "LucasArts",
+		"slug": "lucasarts"
+	},
+	{
+		"id": 2344,
+		"name": "MacSoft Games",
+		"slug": "macsoft-games"
+	},
+	{
+		"id": 237973,
+		"name": "Infogrames",
+		"slug": "infogrames"
+	},
+	{
+		"id": "34d7d82c-0904-4a68-9446-fd3d4fddc3db",
+		"name": "Looking Glass Studios",
+		"slug": "looking-glass-studios"
+	},
+	{
+		"id": 18004,
+		"name": "Valve",
+		"slug": "valve"
+	},
+	{
+		"id": 1853,
+		"name": "Microsoft Game Studios",
+		"slug": "microsoft-game-studios"
+	},
+	{
+		"id": 2324,
+		"name": "Aspyr Media",
+		"slug": "aspyr-media"
+	},
+	{
+		"id": "ccbefaae-dbfb-4b72-92da-6861a5e1e9c1",
+		"name": "CD Projekt RED",
+		"slug": "cd-projekt-red"
+	},
+	{
+		"id": "eea6c06b-d72b-49be-ad7e-5106af63d451",
+		"name": "Pacific Century CyberWorks",
+		"slug": "pacific-century-cyberworks"
+	},
+	{
+		"id": 101482,
+		"name": "Acclaim Entertainment",
+		"slug": "acclaim-entertainment"
+	},
+	{
+		"id": "ad6eb97e-f86b-4e0e-9c7a-bf7656f979ec",
+		"name": "Sold Out Software",
+		"slug": "sold-out-software"
+	},
+	{
+		"id": 91764,
+		"name": "Virgin Games",
+		"slug": "virgin-games"
+	},
+	{
+		"id": 2956,
+		"name": "Westwood Studios",
+		"slug": "westwood-studios"
+	},
+	{
+		"id": "ad1594f7-69d3-457f-8901-c022522bd326",
+		"name": "Cryo Interactive",
+		"slug": "cryo-interactive"
+	},
+	{
+		"id": "b5f79395-ae24-4898-b185-c02747ae57d9",
+		"name": "Fujitsu Interactive",
+		"slug": "fujitsu-interactive"
+	},
+	{
+		"id": 4057,
+		"name": "Global Star Software",
+		"slug": "global-star-software"
+	},
+	{
+		"id": 7124,
+		"name": "Frictional Games",
+		"slug": "frictional-games"
+	},
+	{
+		"id": 210558,
+		"name": "Capcom",
+		"slug": "capcom"
+	},
+	{
+		"id": 269494,
+		"name": "Ubisoft Entertainment",
+		"slug": "ubisoft-entertainment"
+	},
+	{
+		"id": "c88084f1-4903-440e-af29-f01dd5036a2f",
+		"name": "Riot Games",
+		"slug": "riot-games"
+	},
+	{
+		"id": 268352,
+		"name": "Sony Interactive Entertainment",
+		"slug": "sony-interactive-entertainment"
+	},
+	{
+		"id": 3677,
+		"name": "WB Games",
+		"slug": "wb-games"
+	},
+	{
+		"id": "99f69f52-b198-47fd-9df2-0a68e73020db",
+		"name": "Mojang Studios",
+		"slug": "mojang-studios"
+	},
+	{
+		"id": 21591,
+		"name": "Blizzard Entertainment",
+		"slug": "blizzard-entertainment"
+	},
+	{
+		"id": 1774,
+		"name": "Sierra Entertainment",
+		"slug": "sierra-entertainment"
+	},
+	{
+		"id": 21267,
+		"name": "Square Electronic Arts",
+		"slug": "square-electronic-arts"
+	},
+	{
+		"id": "4a5bd165-3748-4850-98c1-f50a36b96c81",
+		"name": "Tsunami Visual Technologies",
+		"slug": "tsunami-visual-technologies"
+	},
+	{
+		"id": 103442,
+		"name": "Disney Interactive",
+		"slug": "disney-interactive"
+	},
+	{
+		"id": "f58e2a80-0d1f-4266-bd64-9843db313c91",
+		"name": "CyberFront",
+		"slug": "cyberfront"
+	},
+	{
+		"id": 2263,
+		"name": "THQ",
+		"slug": "thq"
+	},
+	{
+		"id": 2755,
+		"name": "Disney Interactive Studios",
+		"slug": "disney-interactive-studios"
+	},
+	{
+		"id": 237778,
+		"name": "Atari Corporation",
+		"slug": "atari-corporation"
+	},
+	{
+		"id": "8869e043-b10c-4384-a564-8fc11511482b",
+		"name": "CTO SpA",
+		"slug": "cto-spa"
+	},
+	{
+		"id": "b13ab164-a790-4df6-ae0e-2c301e333dc6",
+		"name": "Lucasfilm Games",
+		"slug": "lucasfilm-games"
+	},
+	{
+		"id": 20957,
+		"name": "U.S. Gold",
+		"slug": "us-gold"
+	},
+	{
+		"id": "465658b6-26ea-45f3-84ca-9e58ac41143b",
+		"name": "TT Games",
+		"slug": "tt-games"
+	},
+	{
+		"id": 52258,
+		"name": "Microsoft",
+		"slug": "microsoft"
+	},
+	{
+		"id": 2030,
+		"name": "Sega",
+		"slug": "sega"
+	},
+	{
+		"id": "cd38b96a-c783-4c97-af39-dbb90ceb1de5",
+		"name": "Playmates Interactive Entertainment",
+		"slug": "playmates-interactive-entertainment"
+	},
+	{
+		"id": "ba40d21a-4444-4d14-b1c5-effede72cc82",
+		"name": "Logicware",
+		"slug": "logicware"
+	},
+	{
+		"id": 106249,
+		"name": "Activision Blizzard",
+		"slug": "activision-blizzard"
+	},
+	{
+		"id": 3862,
+		"name": "NCSOFT",
+		"slug": "ncsoft"
+	},
+	{
+		"id": 237541,
+		"name": "Atari, Inc.",
+		"slug": "atari-inc"
+	},
+	{
+		"id": "90f2ec8c-aac4-4bd5-b764-8b3f6ea1243e",
+		"name": "Brøderbund Software",
+		"slug": "broderbund-software"
+	},
+	{
+		"id": 17804,
+		"name": "Vivendi Universal",
+		"slug": "vivendi-universal"
+	},
+	{
+		"id": "44e93f50-e8d4-4a76-88dd-7897831eb2e0",
+		"name": "GSC Game World",
+		"slug": "gsc-game-world"
+	},
+	{
+		"id": "77adc9f7-c10d-49d2-8843-ab8117b06734",
+		"name": "EA Games",
+		"slug": "ea-games"
+	},
+	{
+		"id": 56358,
+		"name": "Imagineer",
+		"slug": "imagineer"
+	},
+	{
+		"id": 1773,
+		"name": "Legend Entertainment",
+		"slug": "legend-entertainment"
+	},
+	{
+		"id": "082cab01-5ac4-4fe0-92e1-e36e0a210bca",
+		"name": "WizardWorks Software",
+		"slug": "wizardworks-software"
+	},
+	{
+		"id": "13c52f72-7627-4a52-a5f8-242ca323d4a8",
+		"name": "Glu Mobile",
+		"slug": "glu-mobile"
+	},
+	{
+		"id": 1953,
+		"name": "GT Interactive Software",
+		"slug": "gt-interactive-software"
+	},
+	{
+		"id": 6215,
+		"name": "FX Interactive",
+		"slug": "fx-interactive"
+	},
+	{
+		"id": 252937,
+		"name": "Sony Online Entertainment",
+		"slug": "sony-online-entertainment"
+	},
+	{
+		"id": 19146,
+		"name": "Domark Software",
+		"slug": "domark-software"
+	},
+	{
+		"id": "190067fc-474d-42bc-90a2-e0bf303c84e7",
+		"name": "Macmillan Digital Publishing",
+		"slug": "macmillan-digital-publishing"
+	},
+	{
+		"id": "1b1c0d18-2329-4782-9a91-5f3abe8890b9",
+		"name": "Encore",
+		"slug": "encore"
+	},
+	{
+		"id": 2279,
+		"name": "JoWooD Productions Software",
+		"slug": "jowood-productions-software"
+	},
+	{
+		"id": "1ec9179e-432b-46ed-9bc7-ff6b812ec66b",
+		"name": "Sunflowers",
+		"slug": "sunflowers"
+	},
+	{
+		"id": 3292,
+		"name": "DreamCatcher Interactive",
+		"slug": "dreamcatcher-interactive"
+	},
+	{
+		"id": 6268,
+		"name": "cdv Software Entertainment",
+		"slug": "cdv-software-entertainment"
+	},
+	{
+		"id": "5740c4ab-fb5a-481a-910b-30609ee2abf4",
+		"name": "id Software",
+		"slug": "id-software"
+	},
+	{
+		"id": "2d4fec7e-1273-431a-96bc-c2560eacbbb7",
+		"name": "GRAVITY",
+		"slug": "gravity"
+	},
+	{
+		"id": 28516,
+		"name": "Deep Silver",
+		"slug": "deep-silver"
+	},
+	{
+		"id": 46173,
+		"name": "Konami",
+		"slug": "konami"
+	},
+	{
+		"id": "be1a77f3-b00f-4f9d-821c-154497d4f6f3",
+		"name": "Zoo Digital",
+		"slug": "zoo-digital"
+	},
+	{
+		"id": 2918,
+		"name": "NovaLogic",
+		"slug": "novalogic"
+	},
+	{
+		"id": 254584,
+		"name": "Nintendo",
+		"slug": "nintendo"
+	},
+	{
+		"id": 224818,
+		"name": "Gradiente",
+		"slug": "gradiente"
+	},
+	{
+		"id": 1877,
+		"name": "The 3DO Company",
+		"slug": "the-3do-company"
+	},
+	{
+		"id": "75f9e539-e887-4bc3-9ec3-c919c48093ec",
+		"name": "Buka Entertainment",
+		"slug": "buka-entertainment"
+	},
+	{
+		"id": "d06fd5b1-96e9-43a4-93c4-4600a653697e",
+		"name": "Freeverse Software",
+		"slug": "freeverse-software"
+	},
+	{
+		"id": 253943,
+		"name": "Square",
+		"slug": "square"
+	},
+	{
+		"id": "d2e6fd69-766e-4965-9460-b2713f36e7d6",
+		"name": "SUNSOFT",
+		"slug": "sunsoft"
+	},
+	{
+		"id": 180639,
+		"name": "Sony Computer Entertainment",
+		"slug": "sony-computer-entertainment"
+	},
+	{
+		"id": "b09cdd40-f36e-40d0-ad1a-d3fad71b47ae",
+		"name": "Lego Media",
+		"slug": "lego-media"
+	},
+	{
+		"id": 4362,
+		"name": "Focus Entertainment",
+		"slug": "focus-entertainment"
+	},
+	{
+		"id": "8ec0e70b-bfa1-4780-8e0e-bba9a37fcaba",
+		"name": "reLINE Software",
+		"slug": "reline-software"
+	},
+	{
+		"id": "985f2c0e-812a-4990-a23a-13930857bad0",
+		"name": "Blizzard Classic Arcade",
+		"slug": "blizzard-classic-arcade"
+	},
+	{
+		"id": "4e5845cc-95d5-48db-a60c-5f5bc7acb0dd",
+		"name": "T&E Soft",
+		"slug": "tande-soft"
+	},
+	{
+		"id": "854e7054-fe2d-4989-bdf6-2b983dd31088",
+		"name": "iPhSoft",
+		"slug": "iphsoft"
+	},
+	{
+		"id": "1b1f9ef7-0525-4312-bdb6-ed162f0db7f3",
+		"name": "Adventure Soft",
+		"slug": "adventure-soft"
+	},
+	{
+		"id": "f2d42ae1-3529-482a-a8e5-8ce0d5096398",
+		"name": "Playlogic Entertainment",
+		"slug": "playlogic-entertainment"
+	},
+	{
+		"id": "e83e96b0-4de1-4bd0-afd9-fb1fe89993d7",
+		"name": "THQ Wireless",
+		"slug": "thq-wireless"
+	},
+	{
+		"id": 17769,
+		"name": "cdp.pl",
+		"slug": "cdppl"
+	},
+	{
+		"id": "baedfc85-7e39-4287-b648-48bfd6319526",
+		"name": "Trion Worlds",
+		"slug": "trion-worlds"
+	},
+	{
+		"id": "361a2774-8b30-498b-b973-705ee8a7ca20",
+		"name": "Playcast-media",
+		"slug": "playcast-media"
+	},
+	{
+		"id": 2844,
+		"name": "Vivendi Universal Games",
+		"slug": "vivendi-universal-games"
+	},
+	{
+		"id": 34953,
+		"name": "Devolver Digital",
+		"slug": "devolver-digital"
+	},
+	{
+		"id": 174230,
+		"name": "Namco Bandai Games",
+		"slug": "namco-bandai-games"
+	},
+	{
+		"id": "f2196ba0-5e15-4b03-a417-49f66f01bc4c",
+		"name": "Flying Wild Hog",
+		"slug": "flying-wild-hog"
+	},
+	{
+		"id": 2432,
+		"name": "Bandai Namco Entertainment",
+		"slug": "bandai-namco-entertainment"
+	},
+	{
+		"id": "0248144e-cfb8-44cb-a70f-623eb1fa7acf",
+		"name": "Got Game Entertainment",
+		"slug": "got-game-entertainment"
+	},
+	{
+		"id": 3745,
+		"name": "D3 Publisher",
+		"slug": "d3-publisher"
+	},
+	{
+		"id": 3543,
+		"name": "Empire Interactive",
+		"slug": "empire-interactive"
+	},
+	{
+		"id": 227546,
+		"name": "EA Sports",
+		"slug": "ea-sports"
+	},
+	{
+		"id": "8928b02e-7ba8-48fd-a451-b7de59eb0241",
+		"name": "Exakt Entertainment",
+		"slug": "exakt-entertainment"
+	},
+	{
+		"id": "b92001b1-47c9-476e-9fef-2bad875d8b2b",
+		"name": "CompuExpert",
+		"slug": "compuexpert"
+	},
+	{
+		"id": "9286f23f-139e-4ed2-9641-8532aff8ec97",
+		"name": "Triumph Studios",
+		"slug": "triumph-studios"
+	},
+	{
+		"id": "b6defbd7-c62f-4c96-8caf-935e68e6e439",
+		"name": "Toro-Publishing",
+		"slug": "toro-publishing"
+	},
+	{
+		"id": "d3c4728a-2171-49f2-a293-5863fd72f57e",
+		"name": "Fox Interactive",
+		"slug": "fox-interactive"
+	},
+	{
+		"id": "6c171289-26eb-4776-a54f-4f60f0f3dd19",
+		"name": "U.S. Army",
+		"slug": "us-army"
+	},
+	{
+		"id": 20368,
+		"name": "Funcom",
+		"slug": "funcom"
+	},
+	{
+		"id": "08b7ccbc-dffc-4303-8bf3-ab61bacac1fa",
+		"name": "Digital Integration",
+		"slug": "digital-integration"
+	},
+	{
+		"id": 6056,
+		"name": "505 Games",
+		"slug": "505-games"
+	},
+	{
+		"id": "bbbf834c-b0f2-426c-a8ff-8ca604cd885f",
+		"name": "Infinite Monkey",
+		"slug": "infinite-monkey"
+	},
+	{
+		"id": "d50975e1-c1cc-4e3b-a57c-125c00bca1c7",
+		"name": "Matrix Games",
+		"slug": "matrix-games"
+	},
+	{
+		"id": "b22c8751-c6a5-46b2-b7cd-d94b1b0a003b",
+		"name": "Virgin Interactive Entertainment, Inc.",
+		"slug": "virgin-interactive-entertainment-inc"
+	},
+	{
+		"id": 264641,
+		"name": "PopCap Games",
+		"slug": "popcap-games"
+	},
+	{
+		"id": 2012,
+		"name": "Reflexive Entertainment",
+		"slug": "reflexive-entertainment"
+	},
+	{
+		"id": 1935,
+		"name": "SCi Games",
+		"slug": "sci-games"
+	},
+	{
+		"id": "37d0a306-0965-4467-9154-7448599a139b",
+		"name": "New World Computing",
+		"slug": "new-world-computing"
+	},
+	{
+		"id": 3548,
+		"name": "Mindscape",
+		"slug": "mindscape"
+	},
+	{
+		"id": "8ffac6b7-2acd-4e48-94ab-0defc2ee53c5",
+		"name": "Battlefront.com",
+		"slug": "battlefrontcom"
+	},
+	{
+		"id": "41c77a84-41b0-454d-a409-9cc96f673cbc",
+		"name": "Melbourne House",
+		"slug": "melbourne-house"
+	},
+	{
+		"id": "164817aa-10ce-42ed-ac21-5f4fae19f43f",
+		"name": "Russel",
+		"slug": "russel"
+	},
+	{
+		"id": "e8017d45-d948-4d4b-8326-877eeca0f21d",
+		"name": "Mythic Entertainment",
+		"slug": "mythic-entertainment"
+	},
+	{
+		"id": "eac32491-79b7-471a-8f0e-059fa20c8eac",
+		"name": "Ambrosia Software",
+		"slug": "ambrosia-software"
+	},
+	{
+		"id": "6b8eb115-230a-4fe0-8bc6-53af026ddedc",
+		"name": "Haage & Partner",
+		"slug": "haage-and-partner"
+	},
+	{
+		"id": 115898,
+		"name": "Virgin Interactive Entertainment",
+		"slug": "virgin-interactive-entertainment"
+	},
+	{
+		"id": "3748dc62-751d-4f98-a7fb-a4c711f8b6b4",
+		"name": "Ocean",
+		"slug": "ocean"
+	},
+	{
+		"id": "e0f1d6ca-2cac-40a2-81f0-b4caa833e705",
+		"name": "Typhoon Games",
+		"slug": "typhoon-games"
+	},
+	{
+		"id": 4128,
+		"name": "Paradox Interactive",
+		"slug": "paradox-interactive"
+	},
+	{
+		"id": "5e327eae-c436-416d-8082-d063099ef307",
+		"name": "Graphic Simulations",
+		"slug": "graphic-simulations"
+	},
+	{
+		"id": "055bac4f-61a0-41be-9368-9e79d0e303ab",
+		"name": "Digital Image Design",
+		"slug": "digital-image-design"
+	},
+	{
+		"id": "4e0ad183-0f5a-42f4-b701-c60d3bde1fe4",
+		"name": "Graphsim Entertainment",
+		"slug": "graphsim-entertainment"
+	},
+	{
+		"id": 19319,
+		"name": "Electronic Arts Victor",
+		"slug": "electronic-arts-victor"
+	},
+	{
+		"id": 1835,
+		"name": "SSI (Strategic Simulations, Inc.)",
+		"slug": "ssi-strategic-simulations-inc"
+	},
+	{
+		"id": 2693,
+		"name": "Crave Entertainment",
+		"slug": "crave-entertainment"
+	},
+	{
+		"id": "9114dcb8-625e-477f-a827-32bd25a59f11",
+		"name": "Digital Jesters",
+		"slug": "digital-jesters"
+	},
+	{
+		"id": 1907,
+		"name": "Stardock",
+		"slug": "stardock"
+	},
+	{
+		"id": 1674,
+		"name": "10tacle Studios",
+		"slug": "10tacle-studios"
+	},
+	{
+		"id": 1691,
+		"name": "3DO",
+		"slug": "3do"
+	},
+	{
+		"id": 1703,
+		"name": "Rage Software",
+		"slug": "rage-software"
+	},
+	{
+		"id": 1718,
+		"name": "Accolade",
+		"slug": "accolade"
+	},
+	{
+		"id": 53895,
+		"name": "S2 Games",
+		"slug": "s2-games"
+	},
+	{
+		"id": 186529,
+		"name": "Brasoft Produtos de Informática",
+		"slug": "brasoft-produtos-de-informatica"
+	},
+	{
+		"id": 1738,
+		"name": "Access Software",
+		"slug": "access-software"
+	},
+	{
+		"id": 1775,
+		"name": "Actualize",
+		"slug": "actualize"
+	},
+	{
+		"id": 127829,
+		"name": "Cyan Worlds",
+		"slug": "cyan-worlds"
+	},
+	{
+		"id": 14503,
+		"name": "Bungie",
+		"slug": "bungie"
+	},
+	{
+		"id": 214095,
+		"name": "Midway Games",
+		"slug": "midway-games"
+	},
+	{
+		"id": 1822,
+		"name": "PlayFirst",
+		"slug": "playfirst"
+	},
+	{
+		"id": 1824,
+		"name": "SegaSoft",
+		"slug": "segasoft"
+	},
+	{
+		"id": 21043,
+		"name": "Fresh3D",
+		"slug": "fresh3d"
+	},
+	{
+		"id": 3624,
+		"name": "Tri-Synergy",
+		"slug": "tri-synergy"
+	},
+	{
+		"id": 1855,
+		"name": "JoWooD Entertainment AG",
+		"slug": "jowood-entertainment-ag"
+	},
+	{
+		"id": 20104,
+		"name": "Blue Moon Red Owl",
+		"slug": "blue-moon-red-owl"
+	},
+	{
+		"id": 1870,
+		"name": "Strategy First",
+		"slug": "strategy-first"
+	},
+	{
+		"id": 119806,
+		"name": "Telltale Games",
+		"slug": "telltale-games"
+	},
+	{
+		"id": 21920,
+		"name": "Interactive Magic",
+		"slug": "interactive-magic"
+	},
+	{
+		"id": 21922,
+		"name": "Enlight Software Limited",
+		"slug": "enlight-software-limited"
+	},
+	{
+		"id": 19025,
+		"name": "Mastertronic",
+		"slug": "mastertronic"
+	},
+	{
+		"id": 36529,
+		"name": "Merit Studios (Europe)",
+		"slug": "merit-studios-europe"
+	},
+	{
+		"id": 124277,
+		"name": "Dynamix, Inc.",
+		"slug": "dynamix-inc"
+	},
+	{
+		"id": 1924,
+		"name": "Shrapnel Games",
+		"slug": "shrapnel-games"
+	},
+	{
+		"id": 102375,
+		"name": "BlitWorks",
+		"slug": "blitworks"
+	},
+	{
+		"id": 18975,
+		"name": "Meridian4",
+		"slug": "meridian4"
+	},
+	{
+		"id": 1987,
+		"name": "Revolution Software",
+		"slug": "revolution-software"
+	},
+	{
+		"id": 1988,
+		"name": "Auran Games",
+		"slug": "auran-games"
+	},
+	{
+		"id": 1994,
+		"name": "VU Games",
+		"slug": "vu-games"
+	},
+	{
+		"id": 2008,
+		"name": "Red Orb Entertainment",
+		"slug": "red-orb-entertainment"
+	},
+	{
+		"id": 43907,
+		"name": "2D Boy",
+		"slug": "2d-boy"
+	},
+	{
+		"id": 203803,
+		"name": "Team17",
+		"slug": "team17"
+	},
+	{
+		"id": 211710,
+		"name": "Sales Curve Interactive",
+		"slug": "sales-curve-interactive"
+	},
+	{
+		"id": 20530,
+		"name": "Interceptor Entertainment",
+		"slug": "interceptor-entertainment"
+	},
+	{
+		"id": 20527,
+		"name": "PC-SIG",
+		"slug": "pc-sig"
+	},
+	{
+		"id": 2309,
+		"name": "Mastiff",
+		"slug": "mastiff"
+	},
+	{
+		"id": 52184,
+		"name": "Microsoft Studios",
+		"slug": "microsoft-studios"
+	},
+	{
+		"id": 159457,
+		"name": "Atari Europe",
+		"slug": "atari-europe"
+	},
+	{
+		"id": 7694,
+		"name": "Straandlooper Animation",
+		"slug": "straandlooper-animation"
+	},
+	{
+		"id": 69425,
+		"name": "THQ Nordic",
+		"slug": "thq-nordic"
+	},
+	{
+		"id": 2442,
+		"name": "Majesco Entertainment",
+		"slug": "majesco-entertainment"
+	},
+	{
+		"id": 2452,
+		"name": "Exosyphen Studios",
+		"slug": "exosyphen-studios"
+	},
+	{
+		"id": 101094,
+		"name": "St. GIGA",
+		"slug": "st-giga"
+	},
+	{
+		"id": 21494,
+		"name": "Titan Computer",
+		"slug": "titan-computer"
+	},
+	{
+		"id": 2507,
+		"name": "Petroglyph Games",
+		"slug": "petroglyph-games"
+	},
+	{
+		"id": 2508,
+		"name": "Unigine Holding",
+		"slug": "unigine-holding"
+	},
+	{
+		"id": 2509,
+		"name": "Tripwire Interactive",
+		"slug": "tripwire-interactive"
+	},
+	{
+		"id": 2513,
+		"name": "Futuremark Games Studio",
+		"slug": "futuremark-games-studio"
+	},
+	{
+		"id": 2543,
+		"name": "38 Studios",
+		"slug": "38-studios"
+	},
+	{
+		"id": 54827,
+		"name": "Cinemaware",
+		"slug": "cinemaware"
+	},
+	{
+		"id": 6062,
+		"name": "Namco Bandai Partners",
+		"slug": "namco-bandai-partners"
+	},
+	{
+		"id": 43450,
+		"name": "CE Europe Ltd.",
+		"slug": "ce-europe-ltd"
+	},
+	{
+		"id": 225229,
+		"name": "Playtronic",
+		"slug": "playtronic"
+	},
+	{
+		"id": 48759,
+		"name": "Psygnosis",
+		"slug": "psygnosis"
+	},
+	{
+		"id": 226301,
+		"name": "iQue",
+		"slug": "ique"
+	},
+	{
+		"id": 126027,
+		"name": "Konami Digital Entertainment",
+		"slug": "konami-digital-entertainment"
+	},
+	{
+		"id": 149112,
+		"name": "Palcom",
+		"slug": "palcom"
+	},
+	{
+		"id": 69998,
+		"name": "Travian Games",
+		"slug": "travian-games"
+	},
+	{
+		"id": 2713,
+		"name": "Buena Vista Games",
+		"slug": "buena-vista-games"
+	},
+	{
+		"id": 2858,
+		"name": "Working Designs",
+		"slug": "working-designs"
+	},
+	{
+		"id": 2855,
+		"name": "Taito",
+		"slug": "taito"
+	},
+	{
+		"id": 2873,
+		"name": "Natsume Inc.",
+		"slug": "natsume-inc"
+	},
+	{
+		"id": 262411,
+		"name": "Wargaming.net",
+		"slug": "wargamingnet"
+	},
+	{
+		"id": 262946,
+		"name": "Universal Interactive Studios",
+		"slug": "universal-interactive-studios"
+	},
+	{
+		"id": 162098,
+		"name": "Namco",
+		"slug": "namco"
+	},
+	{
+		"id": 24579,
+		"name": "Bandai Namco Holdings",
+		"slug": "bandai-namco-holdings"
+	},
+	{
+		"id": 81770,
+		"name": "Bandai Namco Games",
+		"slug": "bandai-namco-games"
+	},
+	{
+		"id": 2861,
+		"name": "TDK Mediactive",
+		"slug": "tdk-mediactive"
+	},
+	{
+		"id": 199711,
+		"name": "Tec Toy",
+		"slug": "tec-toy"
+	},
+	{
+		"id": 112861,
+		"name": "Sega Enterprises, Ltd.",
+		"slug": "sega-enterprises-ltd"
+	},
+	{
+		"id": 228835,
+		"name": "NAMCO BANDAI Games Inc.",
+		"slug": "namco-bandai-games-inc"
+	},
+	{
+		"id": 50936,
+		"name": "Namco Hometek",
+		"slug": "namco-hometek"
+	},
+	{
+		"id": 158912,
+		"name": "Bandai",
+		"slug": "bandai"
+	},
+	{
+		"id": 5622,
+		"name": "Infinite Game Publishing",
+		"slug": "infinite-game-publishing"
+	},
+	{
+		"id": 109729,
+		"name": "Daybreak Game Company",
+		"slug": "daybreak-game-company"
+	},
+	{
+		"id": 28475,
+		"name": "Ronimo Games",
+		"slug": "ronimo-games"
+	},
+	{
+		"id": 5166,
+		"name": "Kadokawa Games",
+		"slug": "kadokawa-games"
+	},
+	{
+		"id": 2995,
+		"name": "RedOctane",
+		"slug": "redoctane"
+	},
+	{
+		"id": 53802,
+		"name": "GO!",
+		"slug": "go"
+	},
+	{
+		"id": 9245,
+		"name": "Takara",
+		"slug": "takara"
+	},
+	{
+		"id": 71807,
+		"name": "CCP Games",
+		"slug": "ccp-games"
+	},
+	{
+		"id": 14808,
+		"name": "Touchstone Games",
+		"slug": "touchstone-games"
+	},
+	{
+		"id": 251408,
+		"name": "Atari",
+		"slug": "atari"
+	},
+	{
+		"id": 3051,
+		"name": "Unknown Worlds Entertainment",
+		"slug": "unknown-worlds-entertainment"
+	},
+	{
+		"id": 38138,
+		"name": "Runic Games",
+		"slug": "runic-games"
+	},
+	{
+		"id": 16889,
+		"name": "Headup Games",
+		"slug": "headup-games"
+	},
+	{
+		"id": 25320,
+		"name": "Titus Software",
+		"slug": "titus-software"
+	},
+	{
+		"id": 13581,
+		"name": "TopWare Interactive",
+		"slug": "topware-interactive"
+	},
+	{
+		"id": 110639,
+		"name": "ThatGameCompany",
+		"slug": "thatgamecompany"
+	},
+	{
+		"id": 76257,
+		"name": "Annapurna Interactive",
+		"slug": "annapurna-interactive"
+	},
+	{
+		"id": 3066,
+		"name": "Rare",
+		"slug": "rare"
+	},
+	{
+		"id": 26870,
+		"name": "Simon & Schuster",
+		"slug": "simon-and-schuster"
+	},
+	{
+		"id": 245900,
+		"name": "Experimental Gameplay Group",
+		"slug": "experimental-gameplay-group"
+	},
+	{
+		"id": 184013,
+		"name": "Tribute Games",
+		"slug": "tribute-games"
+	},
+	{
+		"id": 171271,
+		"name": "Carbon Games",
+		"slug": "carbon-games"
+	},
+	{
+		"id": 20649,
+		"name": "Yu Suzuki",
+		"slug": "yu-suzuki"
+	},
+	{
+		"id": 7817,
+		"name": "City Interactive",
+		"slug": "city-interactive"
+	},
+	{
+		"id": 3062,
+		"name": "Koei Tecmo Games",
+		"slug": "koei-tecmo-games"
+	},
+	{
+		"id": 150504,
+		"name": "Tecmo",
+		"slug": "tecmo"
+	},
+	{
+		"id": 22940,
+		"name": "LEVEL-5",
+		"slug": "level-5"
+	},
+	{
+		"id": 181238,
+		"name": "SNK",
+		"slug": "snk"
+	},
+	{
+		"id": 14951,
+		"name": "Meteor Entertainment",
+		"slug": "meteor-entertainment"
+	},
+	{
+		"id": 15467,
+		"name": "SNK Playmore",
+		"slug": "snk-playmore"
+	},
+	{
+		"id": 181241,
+		"name": "Noise Factory",
+		"slug": "noise-factory"
+	},
+	{
+		"id": 30534,
+		"name": "Ignition Entertainment",
+		"slug": "ignition-entertainment"
+	},
+	{
+		"id": 267733,
+		"name": "Funsoft",
+		"slug": "funsoft"
+	},
+	{
+		"id": 19542,
+		"name": "Genki",
+		"slug": "genki"
+	},
+	{
+		"id": 151998,
+		"name": "Stern Electronics",
+		"slug": "stern-electronics"
+	},
+	{
+		"id": 12690,
+		"name": "Atlus",
+		"slug": "atlus"
+	},
+	{
+		"id": 3140,
+		"name": "Altron",
+		"slug": "altron"
+	},
+	{
+		"id": 36842,
+		"name": "Expert Software",
+		"slug": "expert-software"
+	},
+	{
+		"id": 36316,
+		"name": "Sega of America",
+		"slug": "sega-of-america"
+	},
+	{
+		"id": 178388,
+		"name": "Enterbrain",
+		"slug": "enterbrain"
+	},
+	{
+		"id": 3137,
+		"name": "SEGA Amusements Europe",
+		"slug": "sega-amusements-europe"
+	},
+	{
+		"id": 12453,
+		"name": "Neoplay",
+		"slug": "neoplay"
+	},
+	{
+		"id": 214148,
+		"name": "Cloud Imperium Games Corporation",
+		"slug": "cloud-imperium-games-corporation"
+	},
+	{
+		"id": 19051,
+		"name": "Sony Computer Entertainment, Inc. (SCEI)",
+		"slug": "sony-computer-entertainment-inc-scei"
+	},
+	{
+		"id": 198157,
+		"name": "Midway",
+		"slug": "midway"
+	},
+	{
+		"id": 3213,
+		"name": "Williams Entertainment",
+		"slug": "williams-entertainment"
+	},
+	{
+		"id": 14435,
+		"name": "Arcen Games",
+		"slug": "arcen-games"
+	},
+	{
+		"id": 34525,
+		"name": "Tsukuda Original",
+		"slug": "tsukuda-original"
+	},
+	{
+		"id": 20987,
+		"name": "MGM Interactive",
+		"slug": "mgm-interactive"
+	},
+	{
+		"id": 13639,
+		"name": "SPS",
+		"slug": "sps"
+	},
+	{
+		"id": 20412,
+		"name": "CAVE Interactive",
+		"slug": "cave-interactive"
+	},
+	{
+		"id": 127122,
+		"name": "AMI",
+		"slug": "ami"
+	},
+	{
+		"id": 13619,
+		"name": "Rising Star Games",
+		"slug": "rising-star-games"
+	},
+	{
+		"id": 20391,
+		"name": "Agetec",
+		"slug": "agetec"
+	},
+	{
+		"id": 20359,
+		"name": "XSEED Games",
+		"slug": "xseed-games"
+	},
+	{
+		"id": 229403,
+		"name": "Halfbrick Studios",
+		"slug": "halfbrick-studios"
+	},
+	{
+		"id": 19737,
+		"name": "Hudson Soft",
+		"slug": "hudson-soft"
+	},
+	{
+		"id": 226942,
+		"name": "Cost",
+		"slug": "cost"
+	},
+	{
+		"id": 3223,
+		"name": "Nordic Games Publishing",
+		"slug": "nordic-games-publishing"
+	},
+	{
+		"id": 175812,
+		"name": "Enix Corporation",
+		"slug": "enix-corporation"
+	},
+	{
+		"id": 18506,
+		"name": "Infogrames Entertainment",
+		"slug": "infogrames-entertainment"
+	},
+	{
+		"id": 3307,
+		"name": "Red Storm Entertainment",
+		"slug": "red-storm-entertainment"
+	},
+	{
+		"id": 3322,
+		"name": "Gameloft",
+		"slug": "gameloft"
+	},
+	{
+		"id": 3469,
+		"name": "SoftBank",
+		"slug": "softbank"
+	},
+	{
+		"id": 88199,
+		"name": "Nicalis, Inc.",
+		"slug": "nicalis-inc"
+	},
+	{
+		"id": 228842,
+		"name": "CD Projekt",
+		"slug": "cd-projekt"
+	},
+	{
+		"id": 76049,
+		"name": "Brightrock Games",
+		"slug": "brightrock-games"
+	},
+	{
+		"id": 64513,
+		"name": "Beamdog",
+		"slug": "beamdog"
+	},
+	{
+		"id": 7109,
+		"name": "Bohemia Interactive Studio",
+		"slug": "bohemia-interactive-studio"
+	},
+	{
+		"id": 60046,
+		"name": "Stainless Games Ltd.",
+		"slug": "stainless-games-ltd"
+	},
+	{
+		"id": 27083,
+		"name": "Capybara Games",
+		"slug": "capybara-games"
+	},
+	{
+		"id": 60026,
+		"name": "Wizards of the Coast LLC",
+		"slug": "wizards-of-the-coast-llc"
+	},
+	{
+		"id": 69146,
+		"name": "Fullbright",
+		"slug": "fullbright"
+	},
+	{
+		"id": 5993,
+		"name": "Kalypso Media",
+		"slug": "kalypso-media"
+	},
+	{
+		"id": 229895,
+		"name": "Robomodo",
+		"slug": "robomodo"
+	},
+	{
+		"id": 17797,
+		"name": "ND Games",
+		"slug": "nd-games"
+	},
+	{
+		"id": 56587,
+		"name": "Personal Software",
+		"slug": "personal-software"
+	},
+	{
+		"id": 57510,
+		"name": "Infocom",
+		"slug": "infocom"
+	},
+	{
+		"id": 41899,
+		"name": "Asgard Software",
+		"slug": "asgard-software"
+	},
+	{
+		"id": 265252,
+		"name": "Atari Interactive",
+		"slug": "atari-interactive"
+	},
+	{
+		"id": 56980,
+		"name": "Gottlieb",
+		"slug": "gottlieb"
+	},
+	{
+		"id": 243085,
+		"name": "Vircom Interactive",
+		"slug": "vircom-interactive"
+	},
+	{
+		"id": 113587,
+		"name": "Gremlin Interactive",
+		"slug": "gremlin-interactive"
+	},
+	{
+		"id": 259485,
+		"name": "Ripcord Games",
+		"slug": "ripcord-games"
+	},
+	{
+		"id": 13733,
+		"name": "Shining Rock Software",
+		"slug": "shining-rock-software"
+	},
+	{
+		"id": 96333,
+		"name": "Techland",
+		"slug": "techland"
+	},
+	{
+		"id": 91325,
+		"name": "Nitro Games",
+		"slug": "nitro-games"
+	},
+	{
+		"id": 8186,
+		"name": "Reverb Communications",
+		"slug": "reverb-communications"
+	},
+	{
+		"id": 5120,
+		"name": "Absolute Entertainment",
+		"slug": "absolute-entertainment"
+	},
+	{
+		"id": 23181,
+		"name": "Edmund McMillen",
+		"slug": "edmund-mcmillen"
+	},
+	{
+		"id": 90526,
+		"name": "Harmonix Music Systems",
+		"slug": "harmonix-music-systems"
+	},
+	{
+		"id": 258712,
+		"name": "RedLynx",
+		"slug": "redlynx"
+	},
+	{
+		"id": 81363,
+		"name": "Arush Entertainment",
+		"slug": "arush-entertainment"
+	},
+	{
+		"id": 187855,
+		"name": "Gaijin Entertainment",
+		"slug": "gaijin-entertainment"
+	},
+	{
+		"id": 56057,
+		"name": "Dro Soft",
+		"slug": "dro-soft"
+	},
+	{
+		"id": 4712,
+		"name": "Réunion des Musées Nationaux",
+		"slug": "reunion-des-musees-nationaux"
+	},
+	{
+		"id": 4723,
+		"name": "Spectrum HoloByte, Inc.",
+		"slug": "spectrum-holobyte-inc"
+	},
+	{
+		"id": 5303,
+		"name": "Koei",
+		"slug": "koei"
+	},
+	{
+		"id": 252479,
+		"name": "Apogee Software",
+		"slug": "apogee-software"
+	},
+	{
+		"id": 5774,
+		"name": "John Romero",
+		"slug": "john-romero"
+	},
+	{
+		"id": 25921,
+		"name": "Core Design",
+		"slug": "core-design"
+	},
+	{
+		"id": 5959,
+		"name": "Masque Publishing",
+		"slug": "masque-publishing"
+	},
+	{
+		"id": 5962,
+		"name": "Silmarils",
+		"slug": "silmarils"
+	},
+	{
+		"id": 5910,
+		"name": "Spectrum Pacific Publishing",
+		"slug": "spectrum-pacific-publishing"
+	},
+	{
+		"id": 5915,
+		"name": "SunStar Publishing",
+		"slug": "sunstar-publishing"
+	},
+	{
+		"id": 257710,
+		"name": "Blast! Entertainment",
+		"slug": "blast-entertainment"
+	},
+	{
+		"id": 18398,
+		"name": "picroma",
+		"slug": "picroma"
+	},
+	{
+		"id": 6262,
+		"name": "Interplay Productions",
+		"slug": "interplay-productions"
+	},
+	{
+		"id": 97957,
+		"name": "Blue Byte Software",
+		"slug": "blue-byte-software"
+	},
+	{
+		"id": 38511,
+		"name": "Daedalic Entertainment",
+		"slug": "daedalic-entertainment"
+	},
+	{
+		"id": 157310,
+		"name": "Robot Circus",
+		"slug": "robot-circus"
+	},
+	{
+		"id": 66909,
+		"name": "Quiet River",
+		"slug": "quiet-river"
+	}
+]

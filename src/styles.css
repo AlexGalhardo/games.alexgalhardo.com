@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	--color-1: #463220;
+	--color-2: #66593c;
+	--color-3: #eceadd;
+	--color-4: #f7f8f5;
+	--color-5: #ffffff;
+	--color-6: #5881a9;
+	--gap-s: 0.625rem;
+	--gap: 1rem;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	margin: 0px;
+	color: var(--color-5);
+	background: var(--color-5);
+	font-size: 1.3rem;
+	background-color: #212529;
+}
+
+small {
+	color: black;
+}
+
+.button {
+	text-align: center;
+}
+
+.button:active {
+	box-shadow: 3px 3px #fff;
+	transform: translateY(2px);
+}
+
+a {
+	text-shadow: 5 5px --color-5;
+	text-decoration: none;
+}
+
+/*
+ * Bootstrap Cookie Alert by Wruczek
+ * https://github.com/Wruczek/Bootstrap-Cookie-Alert
+ * Released under MIT license
+ */
+.cookieAlert {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	margin: 0 !important;
+	z-index: 999;
+	opacity: 0;
+	visibility: hidden;
+	border-radius: 0;
+	transform: translateY(100%);
+	transition: all 500ms ease-out;
+	color: #ecf0f1;
+	background-color: #212529;
+}
+
+.cookieAlert.show {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0%);
+	transition-delay: 1000ms;
+}
+
+.cookieAlert a {
+	text-decoration: underline;
+}
+
+.cookieAlert .acceptCookies {
+	margin-left: 10px;
+	vertical-align: baseline;
+}
+
+/* Scroll Bar */
+.progress-container {
+	width: 100%;
+	height: 5px;
+}
+
+.progress-bar {
+	height: 5px;
+	background-color: white !important;
+	width: 0%;
+	position: fixed;
+	top: 0;
+	z-index: 999999;
+}
+
+/* loading page */
+.pace {
+	-webkit-pointer-events: none;
+	pointer-events: none;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+.pace-inactive {
+	display: none;
+}
+
+.pace .pace-progress {
+	background: white;
+	position: fixed;
+	z-index: 2000;
+	top: 0;
+	right: 100%;
+	width: 100%;
+	height: 5px;
+}
