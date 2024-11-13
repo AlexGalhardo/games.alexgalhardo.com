@@ -4,12 +4,10 @@ import CheckoutCasualSuccessComponent from "./checkout-casual-success.component"
 import CheckoutProSuccessComponent from "./checkout-pro-success.component";
 
 export default function CheckoutSuccessComponent() {
-	const { login } = useGlobalState();
+	const { isAlreadyLoggedIn } = useGlobalState();
 
 	setTimeout(() => {
-		if (login === false) {
-			return <Navigate to="/login" />;
-		}
+		if (!isAlreadyLoggedIn) return <Navigate to="/login" />;
 	}, 1000);
 
 	const location = useLocation();

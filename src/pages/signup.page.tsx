@@ -6,7 +6,7 @@ import { useState } from "react";
 import { SignupValidator } from "../validators/signup.validator";
 
 export default function SignupPage() {
-	let { alreadyLoggedIn, signup, loading, apiRequestError } = useGlobalState();
+	let { isAlreadyLoggedIn, signup, loading, apiRequestError } = useGlobalState();
 	const [checkbox, setCheckbox] = useState(false);
 	const [errorCheckBox, setErrorCheckBox] = useState(false);
 	const [formDataError, setFormDataError] = useState<string>();
@@ -17,7 +17,7 @@ export default function SignupPage() {
 		password: "",
 	});
 
-	if (alreadyLoggedIn) return <Navigate to="/profile" />;
+	if (isAlreadyLoggedIn) return <Navigate to="/profile" />;
 
 	const handleCheckboxChange = () => setCheckbox(!checkbox);
 
@@ -62,7 +62,7 @@ export default function SignupPage() {
 						<input
 							className="fs-5 form-control"
 							minLength={4}
-							placeholder="Digit your name"
+							placeholder="Username"
 							type="text"
 							name="name"
 							value={formData.name}
@@ -79,7 +79,7 @@ export default function SignupPage() {
 						<input
 							className="fs-5 form-control"
 							minLength={8}
-							placeholder="Digit your email"
+							placeholder="Email"
 							type="email"
 							name="email"
 							value={formData.email}
@@ -96,7 +96,7 @@ export default function SignupPage() {
 						<input
 							className="fs-5 form-control"
 							minLength={6}
-							placeholder="Digit your password"
+							placeholder="Password"
 							type="password"
 							name="password"
 							value={formData.password}

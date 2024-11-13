@@ -7,11 +7,9 @@ import HeadScript from "../components/head-script.component";
 import NotFound from "../components/not-found.component";
 
 export default function ProfilePage() {
-	const { login } = useGlobalState();
+	const { isAlreadyLoggedIn } = useGlobalState();
 
-	if (login === false) {
-		return <Navigate to="/login" />;
-	}
+	if (!isAlreadyLoggedIn) return <Navigate to="/login" />;
 
 	return (
 		<>

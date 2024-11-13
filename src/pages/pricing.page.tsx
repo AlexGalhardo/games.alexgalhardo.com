@@ -7,16 +7,14 @@ import { useNavigate } from "react-router-dom";
 import SuccessAlertMessage from "../components/success-alert-message.component";
 
 export default function PricingPage() {
-	const { login, user } = useGlobalState();
+	const { isAlreadyLoggedIn, user } = useGlobalState();
 	const [alreadyMember, setAlreadyMember] = useState<boolean>(false);
 	const navigate = useNavigate();
 
 	const handleSubmitCasual = async (e: any) => {
 		e.preventDefault();
 
-		if (login === false) {
-			navigate("/login");
-		}
+		if (!isAlreadyLoggedIn) return navigate("/login");
 
 		try {
 			const response = await fetch(`${API_URL}/stripe/create-checkout-session`, {
@@ -49,9 +47,7 @@ export default function PricingPage() {
 	const handleSubmitPro = async (e: any) => {
 		e.preventDefault();
 
-		if (login === false) {
-			navigate("/login");
-		}
+		if (!isAlreadyLoggedIn) return navigate("/login");
 
 		try {
 			const response = await fetch(`${API_URL}/stripe/create-checkout-session`, {
