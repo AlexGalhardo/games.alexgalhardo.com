@@ -40,7 +40,7 @@ interface GlobalStateContextPort {
 	error: null | string;
 	loading: boolean;
 	user: User | null;
-	alreadyLoggedIn: boolean;
+	isAlreadyLoggedIn: boolean;
 	updatedProfile: boolean;
 	sendRecoverPassword: boolean;
 	sendResetPassword: boolean;
@@ -59,7 +59,7 @@ const GlobalStateContext = createContext<GlobalStateContextPort | undefined>(und
 
 export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 	const [user, setUser] = useState<User | null>(null);
-	const [alreadyLoggedIn, setAlreadyLoggedIn] = useState<boolean>(false);
+	const [isAlreadyLoggedIn, setAlreadyLoggedIn] = useState<boolean>(false);
 	const [loading, setLoading] = useState<boolean>(false);
 	const [error, setError] = useState<null | string>(null);
 	const [sendRecoverPassword, setSendRecoverPassword] = useState<boolean>(false);
@@ -79,13 +79,15 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 	async function getUser(token: string) {
 		setAlreadyLoggedIn(true);
 
-		const { data } = await (await fetch(`${API_URL}/check-user-jwt-token`, {
-			method: "POST",
-			headers: {
-				"Content-Type": "application/json",
-				Authorization: `Bearer ${token}`,
-			},
-		})).json();
+		const { data } = await (
+			await fetch(`${API_URL}/check-user-jwt-token`, {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+					Authorization: `Bearer ${token}`,
+				},
+			})
+		).json();
 
 		setUser({
 			id: data.id,
@@ -108,10 +110,10 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 					receipt_url: data.stripe.subscription.receipt_url,
 					hosted_invoice_url: data.stripe.subscription.hosted_invoice_url,
 				},
-				updated_at: data.stripe.updated_at
+				updated_at: data.stripe.updated_at,
 			},
 			created_at: data.created_at,
-			updated_at: data.updated_at
+			updated_at: data.updated_at,
 		});
 	}
 
@@ -216,9 +218,7 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 				setError("Email and/or Password Invalid");
 			} else {
 				const json = await response.json();
-				if (json.redirect) {
-					window.location.href = json.redirect;
-				}
+				if (json.redirect) window.location.href = json.redirect;
 				window.localStorage.setItem("auth_token", json.auth_token);
 				await getUser(json.auth_token);
 				navigate("/profile");
@@ -314,7 +314,6 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 			const urlSearchParams = new URLSearchParams(currentUrl.split("?")[1]);
 			let token = null;
 			if (urlSearchParams.get("auth_token")) {
-				console.log('urlSearchParams.get("auth_token") ======> ', urlSearchParams.get("auth_token"));
 				token = urlSearchParams.get("auth_token");
 				window.localStorage.setItem("auth_token", token as string);
 			} else if (window.localStorage.getItem("auth_token")) token = window.localStorage.getItem("auth_token");
@@ -343,7 +342,7 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 				user,
 				error,
 				loading,
-				alreadyLoggedIn,
+				isAlreadyLoggedIn,
 				getUser,
 				signup,
 				sendRecoverPassword,

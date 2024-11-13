@@ -5,9 +5,10 @@ import ErrorAlertMessage from "../components/error-alert-message.component";
 import { API_URL } from "../utils/constants.util";
 import { useState } from "react";
 import { LoginValidator } from "../validators/login.validator";
+// import { SignInButton } from "@clerk/clerk-react";
 
 export default function LoginPage() {
-	const { alreadyLoggedIn, error, loading, login } = useGlobalState();
+	const { isAlreadyLoggedIn, loading, error, login } = useGlobalState();
 	const [formDataError, setFormDataError] = useState<string>();
 
 	const [formData, setFormData] = useState({
@@ -15,7 +16,7 @@ export default function LoginPage() {
 		password: "",
 	});
 
-	if (alreadyLoggedIn) return <Navigate to="/profile" />;
+	if (isAlreadyLoggedIn) return <Navigate to="/profile" />;
 
 	const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
 		const { name, value } = e.target;
@@ -41,6 +42,8 @@ export default function LoginPage() {
 						<span className="text-warning">Games</span>
 					</a>
 				</h1>
+
+				{/* <SignInButton /> */}
 
 				<div
 					id="g_id_onload"

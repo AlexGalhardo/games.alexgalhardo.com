@@ -37,7 +37,9 @@ export default function ResetPasswordForm() {
 			const numberRegex = /[0-9]/;
 
 			securePassword =
-				specialCharRegex.test(new_password) && uppercaseRegex.test(new_password) && numberRegex.test(new_password);
+				specialCharRegex.test(new_password) &&
+				uppercaseRegex.test(new_password) &&
+				numberRegex.test(new_password);
 
 			if (new_password.length < 12) {
 				setNewPasswordError("Password must has at least 12 characters");
