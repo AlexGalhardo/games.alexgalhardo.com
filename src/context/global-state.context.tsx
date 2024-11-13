@@ -40,11 +40,12 @@ interface GlobalStateContextPort {
 	error: null | string;
 	loading: boolean;
 	user: User | null;
-	alreadyLoggedIn: boolean;
+	isAlreadyLoggedIn: boolean;
 	updatedProfile: boolean;
 	sendRecoverPassword: boolean;
 	sendResetPassword: boolean;
 	apiRequestError: string | undefined;
+	setLoading: React.Dispatch<React.SetStateAction<boolean>>;
 	login: (name: string, password: string) => Promise<Element | undefined>;
 	logout: () => Promise<void>;
 	getUser: (token: string) => Promise<void>;
@@ -59,7 +60,7 @@ const GlobalStateContext = createContext<GlobalStateContextPort | undefined>(und
 
 export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 	const [user, setUser] = useState<User | null>(null);
-	const [alreadyLoggedIn, setAlreadyLoggedIn] = useState<boolean>(false);
+	const [isAlreadyLoggedIn, setAlreadyLoggedIn] = useState<boolean>(false);
 	const [loading, setLoading] = useState<boolean>(false);
 	const [error, setError] = useState<null | string>(null);
 	const [sendRecoverPassword, setSendRecoverPassword] = useState<boolean>(false);
@@ -71,48 +72,58 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 	const logout = useCallback(async function () {
 		setUser(null);
 		setError(null);
+		await new Promise((resolve) => setTimeout(resolve, 1000));
 		setLoading(false);
 		setAlreadyLoggedIn(false);
 		window.localStorage.removeItem("auth_token");
 	}, []);
 
-	async function getUser(token: string) {
-		setAlreadyLoggedIn(true);
-
-		const { data } = await (await fetch(`${API_URL}/check-user-jwt-token`, {
-			method: "POST",
-			headers: {
-				"Content-Type": "application/json",
-				Authorization: `Bearer ${token}`,
-			},
-		})).json();
-
-		setUser({
-			id: data.id,
-			name: data.name,
-			email: data.email,
-			phone_number: data.phone_number,
-			password: data.password,
-			auth_token: data.auth_token,
-			api_key: data.api_key,
-			reset_password_token: data.reset_password_token,
-			reset_password_token_expires_at: data.reset_password_token_expires_at,
-			stripe: {
-				customer_id: data.stripe.customer_id,
-				subscription: {
-					active: data.stripe.subscription.active,
-					name: data.stripe.subscription.name,
-					starts_at: data.stripe.subscription.starts_at,
-					ends_at: data.stripe.subscription.ends_at,
-					charge_id: data.stripe.subscription.charge_id,
-					receipt_url: data.stripe.subscription.receipt_url,
-					hosted_invoice_url: data.stripe.subscription.hosted_invoice_url,
+	async function getUser(auth_token: string) {
+		const { data } = await (
+			await fetch(`${API_URL}/check-user-auth-token`, {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+					Authorization: `Bearer ${auth_token}`,
 				},
-				updated_at: data.stripe.updated_at
-			},
-			created_at: data.created_at,
-			updated_at: data.updated_at
-		});
+			})
+		).json();
+
+		if (data) {
+			const user = {
+				id: data?.id,
+				name: data?.name,
+				email: data?.email,
+				phone_number: data?.phone_number,
+				password: data?.password,
+				auth_token: data.auth_token,
+				api_key: data?.api_key,
+				reset_password_token: data?.reset_password_token,
+				reset_password_token_expires_at: data?.reset_password_token_expires_at,
+				stripe: {
+					customer_id: data?.stripe_customer_id,
+					subscription: {
+						active: data?.stripe_subscription_active,
+						name: data?.stripe_subscription_name,
+						starts_at: data?.stripe.subscription_starts_at,
+						ends_at: data?.stripe_subscription_ends_at,
+						charge_id: data?.stripe_subscription_charge_id,
+						receipt_url: data?.stripe_subscription_receipt_url,
+						hosted_invoice_url: data?.stripe_subscription_hosted_invoice_url,
+					},
+					updated_at: data?.stripe_updated_at,
+				},
+				created_at: data?.created_at,
+				updated_at: data?.updated_at,
+			}
+			console.log('user -> ', user)
+
+			// setUser(user);
+
+			// setAlreadyLoggedIn(true);
+		}
+
+		setAlreadyLoggedIn(true);
 	}
 
 	async function forgetPassword(email: string): Promise<any> {
@@ -137,6 +148,7 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 			setSendRecoverPassword(true);
 		} finally {
 			setSendRecoverPassword(true);
+			await new Promise((resolve) => setTimeout(resolve, 2000));
 			setLoading(false);
 		}
 	}
@@ -173,6 +185,7 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 			setSendResetPassword(true);
 		} finally {
 			setSendResetPassword(true);
+			await new Promise((resolve) => setTimeout(resolve, 2000));
 			setLoading(false);
 		}
 	}
@@ -200,33 +213,30 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 		try {
 			setError(null);
 			setLoading(true);
-			const response = await fetch(`${API_URL}/login`, {
-				method: "POST",
-				headers: {
-					"Content-Type": "application/json",
-				},
-				body: JSON.stringify({
-					email,
-					password,
-				}),
-			});
-			if (!response.ok) {
-				const { message } = await response.json();
-				setAPIRequestError(message);
-				setError("Email and/or Password Invalid");
-			} else {
-				const json = await response.json();
-				if (json.redirect) {
-					window.location.href = json.redirect;
-				}
-				window.localStorage.setItem("auth_token", json.auth_token);
-				await getUser(json.auth_token);
+			const response = await (
+				await fetch(`${API_URL}/login`, {
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json",
+					},
+					body: JSON.stringify({
+						email,
+						password,
+					}),
+				})
+			).json();
+
+			if (response.success) {
+				if (response.redirect) window.location.href = response.redirect;
+				window.localStorage.setItem("auth_token", response.auth_token);
+				await getUser(response.auth_token);
 				navigate("/profile");
 			}
 		} catch (err: any) {
-			setError(err.message);
+			setError("Email and/or Password Invalid");
 			setAlreadyLoggedIn(false);
 		} finally {
+			await new Promise((resolve) => setTimeout(resolve, 2000));
 			setLoading(false);
 		}
 	}
@@ -265,13 +275,17 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 					});
 					setUpdatedProfile(true);
 					setAPIRequestError("");
+				} else {
+					setUpdatedProfile(false);
 				}
 			}
 		} catch (error: any) {
 			setError(error.message);
+			await new Promise((resolve) => setTimeout(resolve, 2000));
 			setLoading(false);
 			setUpdatedProfile(false);
 		} finally {
+			await new Promise((resolve) => setTimeout(resolve, 2000));
 			setLoading(false);
 		}
 	}
@@ -304,6 +318,7 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 			setError(err.message);
 			setAlreadyLoggedIn(false);
 		} finally {
+			await new Promise((resolve) => setTimeout(resolve, 2000));
 			setLoading(false);
 		}
 	}
@@ -312,38 +327,46 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 		async function autoLogin() {
 			const currentUrl = window.location.href;
 			const urlSearchParams = new URLSearchParams(currentUrl.split("?")[1]);
-			let token = null;
+			let auth_token = null;
+
 			if (urlSearchParams.get("auth_token")) {
-				console.log('urlSearchParams.get("auth_token") ======> ', urlSearchParams.get("auth_token"));
-				token = urlSearchParams.get("auth_token");
-				window.localStorage.setItem("auth_token", token as string);
-			} else if (window.localStorage.getItem("auth_token")) token = window.localStorage.getItem("auth_token");
-			if (token) {
+				auth_token = urlSearchParams.get("auth_token");
+				window.localStorage.setItem("auth_token", auth_token as string);
+			} else if (window.localStorage.getItem("auth_token")) {
+				auth_token = window.localStorage.getItem("auth_token");
+			}
+
+			console.log("auth_token -> ", auth_token);
+
+			if (auth_token) {
 				try {
 					setError(null);
 					setLoading(true);
-					await getUser(token);
+					await getUser(auth_token);
 				} catch (err) {
 					logout();
 				} finally {
+					await new Promise((resolve) => setTimeout(resolve, 2000));
 					setLoading(false);
 				}
 			} else {
 				setAlreadyLoggedIn(false);
 			}
 		}
+
 		autoLogin();
 	}, []);
 
 	return (
 		<GlobalStateContext.Provider
 			value={{
+				setLoading,
 				login,
 				logout,
 				user,
 				error,
 				loading,
-				alreadyLoggedIn,
+				isAlreadyLoggedIn,
 				getUser,
 				signup,
 				sendRecoverPassword,

@@ -7,7 +7,7 @@ import { useState } from "react";
 import { LoginValidator } from "../validators/login.validator";
 
 export default function LoginPage() {
-	const { alreadyLoggedIn, error, loading, login } = useGlobalState();
+	const { isAlreadyLoggedIn, loading, error, login } = useGlobalState();
 	const [formDataError, setFormDataError] = useState<string>();
 
 	const [formData, setFormData] = useState({
@@ -15,7 +15,7 @@ export default function LoginPage() {
 		password: "",
 	});
 
-	if (alreadyLoggedIn) return <Navigate to="/profile" />;
+	if (isAlreadyLoggedIn) return <Navigate to="/profile" />;
 
 	const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
 		const { name, value } = e.target;
@@ -77,7 +77,7 @@ export default function LoginPage() {
 					<div className="form-group mb-4 text-center">
 						<input
 							className="fs-5 form-control"
-							minLength={12}
+							minLength={6}
 							placeholder="Password"
 							type="password"
 							name="password"

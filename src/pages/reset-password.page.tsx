@@ -6,15 +6,14 @@ import { useState } from "react";
 import SuccessAlertMessage from "../components/success-alert-message.component";
 
 export default function ResetPasswordForm() {
-	const { login, loading, resetPassword, sendResetPassword, isValidResetPasswordToken } = useGlobalState();
+	const { isAlreadyLoggedIn, loading, resetPassword, sendResetPassword, isValidResetPasswordToken } =
+		useGlobalState();
 	const [new_password, setNewPassword] = useState<string>();
 	const [confirm_new_password, setConfirmNewPassword] = useState<string>();
 	const [newPasswordError, setNewPasswordError] = useState<string>();
 	const { reset_password_token } = useParams();
 
-	if (login === true) {
-		return <Navigate to="/profile" />;
-	}
+	if (!isAlreadyLoggedIn) return <Navigate to="/login" />;
 
 	if (reset_password_token) {
 		isValidResetPasswordToken(reset_password_token);
@@ -24,8 +23,6 @@ export default function ResetPasswordForm() {
 
 	async function handleSubmit(event: any) {
 		event.preventDefault();
-
-		console.log("new_password !== confirm_new_password => ", new_password !== confirm_new_password);
 
 		let securePassword = null;
 
@@ -37,7 +34,9 @@ export default function ResetPasswordForm() {
 			const numberRegex = /[0-9]/;
 
 			securePassword =
-				specialCharRegex.test(new_password) && uppercaseRegex.test(new_password) && numberRegex.test(new_password);
+				specialCharRegex.test(new_password) &&
+				uppercaseRegex.test(new_password) &&
+				numberRegex.test(new_password);
 
 			if (new_password.length < 12) {
 				setNewPasswordError("Password must has at least 12 characters");

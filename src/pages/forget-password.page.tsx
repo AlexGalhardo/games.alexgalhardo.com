@@ -5,11 +5,11 @@ import SuccessAlertMessage from "../components/success-alert-message.component";
 import { useState } from "react";
 
 export default function ForgetPasswordPage() {
-	const { forgetPassword, sendRecoverPassword, loading, login } = useGlobalState();
+	const { forgetPassword, sendRecoverPassword, loading, isAlreadyLoggedIn } = useGlobalState();
 	const [email, setEmail] = useState<string>();
 	const [errorEmail, setErrorEmail] = useState<string>();
 
-	if (login === true) return <Navigate to="/profile" />;
+	if (!isAlreadyLoggedIn) return <Navigate to="/login" />;
 
 	function isValidEmail(email: string): boolean {
 		const regex = /\S+@\S+\.\S+/;

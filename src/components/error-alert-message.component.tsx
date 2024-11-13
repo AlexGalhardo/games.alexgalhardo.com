@@ -5,7 +5,7 @@ interface AlertError {
 export default function ErrorAlertMessage({ message }: AlertError) {
 	if (!message) return null;
 	return (
-		<p className="fw-bold fs-3 text-center alert alert-danger mb-5" role="alert">
+		<p className="fw-bold fs-5 text-center alert alert-danger mb-5" role="alert">
 			{message}
 		</p>
 	);
