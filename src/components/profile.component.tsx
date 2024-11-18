@@ -1,47 +1,11 @@
 import { useGlobalState } from "../context/global-state.context";
 import SuccessAlertMessage from "./success-alert-message.component";
 import ClipboardJS from "clipboard";
-import { z } from "zod";
 import { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { formatDateTimeToPtBr } from "../utils/format-date-time-pt-br.util";
-
-const ProfileUpdateValidator = z
-	.object({
-		name: z.string().min(4, "name must have at least 4 characters").optional(),
-		phone_number: z
-			.string()
-			.regex(/^55\d{11}$/, "Phone number must start with '55' and contain exactly 13 number digits")
-			.length(13, "Phone number must be exactly 13 characters long")
-			.optional(),
-		new_password: z
-			.string()
-			.min(8, "new password must be at least 8 characters long")
-			.refine((val) => /[A-Z]/.test(val), "new password must contain at least one uppercase letter")
-			.refine((val) => /[a-z]/.test(val), "new password must contain at least one lowercase letter")
-			.refine((val) => /[0-9]/.test(val), "new password must contain at least one number")
-			.refine(
-				(val) => /[!@#$%^&*(),.?":{}|<>]/.test(val),
-				"new password must contain at least one special character",
-			)
-			.optional(),
-		confirm_new_password: z
-			.string()
-			.min(8, "confirm new password must be at least 8 characters long")
-			.refine((val) => /[A-Z]/.test(val), "confirm new password must contain at least one uppercase letter")
-			.refine((val) => /[a-z]/.test(val), "confirm new password must contain at least one lowercase letter")
-			.refine((val) => /[0-9]/.test(val), "confirm new password must contain at least one number")
-			.refine(
-				(val) => /[!@#$%^&*(),.?":{}|<>]/.test(val),
-				"confirm new password must contain at least one special character",
-			)
-			.optional(),
-	})
-	.refine((data) => data.new_password === data.confirm_new_password, {
-		message: "Passwords must be equal",
-		path: ["confirm_new_password"],
-	});
+import { ProfileUpdateValidator } from "../validators/profile-update.validator";
 
 export default function ProfileUser() {
 	const { user, updateProfile, loading, error, updatedProfile, setLoading } = useGlobalState();
@@ -75,12 +39,12 @@ export default function ProfileUser() {
 
 	async function handleSubmitUpdateProfile(event: React.FormEvent) {
 		event.preventDefault();
-		setLoading(true);
+		// setLoading(true);
 		const validateUpdateProfileInputs = ProfileUpdateValidator.safeParse(formData);
 
 		if (!validateUpdateProfileInputs.success) {
 			setTimeout(() => {
-				setLoading(false);
+				// setLoading(false);
 				setFormDataError(validateUpdateProfileInputs.error.errors[0].message);
 				toast.error(validateUpdateProfileInputs.error.errors[0].message, {
 					position: "bottom-center",
@@ -101,7 +65,7 @@ export default function ProfileUser() {
 			confirm_new_password: formData?.confirm_new_password ?? undefined,
 		});
 
-		setLoading(false);
+		// setLoading(false);
 
 		if (error) {
 			toast.error("Profile Update Error", {

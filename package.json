@@ -36,10 +36,10 @@
 		"@types/string-similarity": "^4.0.2",
 		"@vitejs/plugin-react": "^4.3.3",
 		"husky": "^9.1.6",
-		"postcss": "^8.4.48",
+		"postcss": "^8.4.49",
 		"prettier": "^3.3.3",
 		"release-it": "^17.10.0",
-		"tailwindcss": "^3.4.14",
+		"tailwindcss": "^3.4.15",
 		"typescript": "^5.6.3",
 		"vite": "^5.4.11"
 	},

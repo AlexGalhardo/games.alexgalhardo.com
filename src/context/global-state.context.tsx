@@ -59,7 +59,7 @@ interface GlobalStateContextPort {
 const GlobalStateContext = createContext<GlobalStateContextPort | undefined>(undefined);
 
 export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
-	const [user, setUser] = useState<User | null>(null);
+	const [user, setUser] = useState<any | null>(null);
 	const [isAlreadyLoggedIn, setAlreadyLoggedIn] = useState<boolean>(false);
 	const [loading, setLoading] = useState<boolean>(false);
 	const [error, setError] = useState<null | string>(null);
@@ -75,8 +75,19 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 		await new Promise((resolve) => setTimeout(resolve, 1000));
 		setLoading(false);
 		setAlreadyLoggedIn(false);
-		window.localStorage.removeItem("auth_token");
+		// window.localStorage.removeItem("auth_token");
 	}, []);
+
+	function getCookie(name: string): string | null {
+		const cookies = document.cookie.split("; ");
+		for (const cookie of cookies) {
+			const [key, value] = cookie.split("=");
+			if (key === name) {
+				return decodeURIComponent(value);
+			}
+		}
+		return null;
+	}
 
 	async function getUser(auth_token: string) {
 		const { data } = await (
@@ -89,14 +100,16 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 			})
 		).json();
 
+		console.log("getUser -> ", data);
+
 		if (data) {
-			const user = {
+			setUser({
 				id: data?.id,
 				name: data?.name,
 				email: data?.email,
 				phone_number: data?.phone_number,
 				password: data?.password,
-				auth_token: data.auth_token,
+				auth_token: data?.auth_token,
 				api_key: data?.api_key,
 				reset_password_token: data?.reset_password_token,
 				reset_password_token_expires_at: data?.reset_password_token_expires_at,
@@ -115,15 +128,9 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 				},
 				created_at: data?.created_at,
 				updated_at: data?.updated_at,
-			}
-			console.log('user -> ', user)
-
-			// setUser(user);
-
-			// setAlreadyLoggedIn(true);
+			});
+			setAlreadyLoggedIn(true);
 		}
-
-		setAlreadyLoggedIn(true);
 	}
 
 	async function forgetPassword(email: string): Promise<any> {
@@ -148,7 +155,7 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 			setSendRecoverPassword(true);
 		} finally {
 			setSendRecoverPassword(true);
-			await new Promise((resolve) => setTimeout(resolve, 2000));
+			// await new Promise((resolve) => setTimeout(resolve, 2000));
 			setLoading(false);
 		}
 	}
@@ -185,7 +192,7 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 			setSendResetPassword(true);
 		} finally {
 			setSendResetPassword(true);
-			await new Promise((resolve) => setTimeout(resolve, 2000));
+			// await new Promise((resolve) => setTimeout(resolve, 2000));
 			setLoading(false);
 		}
 	}
@@ -228,15 +235,17 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 
 			if (response.success) {
 				if (response.redirect) window.location.href = response.redirect;
+				// document.cookie = `auth_token=${response.auth_token}; path=/; secure; HttpOnly; SameSite=Strict; max-age=1800`;
+				// console.log('document.cookie -> ', document.cookie)
 				window.localStorage.setItem("auth_token", response.auth_token);
 				await getUser(response.auth_token);
 				navigate("/profile");
 			}
 		} catch (err: any) {
-			setError("Email and/or Password Invalid");
-			setAlreadyLoggedIn(false);
+			// setError("Email and/or Password Invalid");
+			// setAlreadyLoggedIn(false);
 		} finally {
-			await new Promise((resolve) => setTimeout(resolve, 2000));
+			// await new Promise((resolve) => setTimeout(resolve, 2000));
 			setLoading(false);
 		}
 	}
@@ -245,10 +254,16 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 		try {
 			setError(null);
 			setLoading(true);
+
+			const authToken = getCookie("auth_token");
+
+			if (!authToken) console.error("auth_token is missing.");
+
 			const response = await fetch(`${API_URL}/profile`, {
 				method: "PUT",
 				headers: {
 					"Content-Type": "application/json",
+					// Authorization: `Bearer ${authToken}`,
 					Authorization: `Bearer ${window.localStorage.getItem("auth_token")}`,
 				},
 				body: JSON.stringify({
@@ -281,11 +296,11 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 			}
 		} catch (error: any) {
 			setError(error.message);
-			await new Promise((resolve) => setTimeout(resolve, 2000));
+			// await new Promise((resolve) => setTimeout(resolve, 2000));
 			setLoading(false);
 			setUpdatedProfile(false);
 		} finally {
-			await new Promise((resolve) => setTimeout(resolve, 2000));
+			// await new Promise((resolve) => setTimeout(resolve, 2000));
 			setLoading(false);
 		}
 	}
@@ -310,6 +325,7 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 			if (!response.success) {
 				setAPIRequestError(response.error);
 			} else {
+				// document.cookie = `auth_token=${response.auth_token}; path=/; secure; HttpOnly; SameSite=Strict; max-age=1800`;
 				window.localStorage.setItem("auth_token", response?.auth_token);
 				await getUser(response?.auth_token);
 				navigate("/profile");
@@ -318,35 +334,42 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 			setError(err.message);
 			setAlreadyLoggedIn(false);
 		} finally {
-			await new Promise((resolve) => setTimeout(resolve, 2000));
+			// await new Promise((resolve) => setTimeout(resolve, 2000));
 			setLoading(false);
 		}
 	}
 
 	useEffect(() => {
 		async function autoLogin() {
+			await new Promise((resolve) => setTimeout(resolve, 2000));
+
 			const currentUrl = window.location.href;
 			const urlSearchParams = new URLSearchParams(currentUrl.split("?")[1]);
 			let auth_token = null;
 
 			if (urlSearchParams.get("auth_token")) {
 				auth_token = urlSearchParams.get("auth_token");
+				// document.cookie = `auth_token=${auth_token}; path=/; secure; HttpOnly; SameSite=Strict; max-age=1800`;
 				window.localStorage.setItem("auth_token", auth_token as string);
 			} else if (window.localStorage.getItem("auth_token")) {
+				// auth_token = getCookie("auth_token");
+				// if (!auth_token) console.error("auth_token is missing.");
 				auth_token = window.localStorage.getItem("auth_token");
 			}
 
-			console.log("auth_token -> ", auth_token);
+			console.log("auth_token no autologin -> ", auth_token);
 
 			if (auth_token) {
 				try {
 					setError(null);
 					setLoading(true);
+					setAlreadyLoggedIn(true);
 					await getUser(auth_token);
+					navigate("/profile");
 				} catch (err) {
 					logout();
 				} finally {
-					await new Promise((resolve) => setTimeout(resolve, 2000));
+					// await new Promise((resolve) => setTimeout(resolve, 2000));
 					setLoading(false);
 				}
 			} else {
