@@ -68,6 +68,7 @@ export default function ResetPasswordForm() {
 							Digit your new password
 						</label>
 						<input
+							autoFocus
 							className="fs-4 form-control"
 							minLength={12}
 							placeholder="Digit your new password"

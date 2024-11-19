@@ -68,6 +68,7 @@ export default function LoginPage() {
 							minLength={8}
 							type="email"
 							name="email"
+							autoFocus
 							value={formData.email}
 							onChange={handleChange}
 							required

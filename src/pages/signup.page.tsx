@@ -60,6 +60,7 @@ export default function SignupPage() {
 
 					<div className="form-group mb-3">
 						<input
+							autoFocus
 							className="fs-5 form-control"
 							minLength={4}
 							placeholder="Username"

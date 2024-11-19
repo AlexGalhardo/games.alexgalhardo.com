@@ -31,6 +31,7 @@ export default function NavbarComponent() {
 						<form className="d-flex w-50" onSubmit={handleSearch}>
 							<div className="input-group">
 								<input
+									autoFocus
 									type="text"
 									name="search"
 									className="fs-6 form-control"

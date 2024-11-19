@@ -115,8 +115,8 @@ export const GlobalStateProvider = ({ children }: React.PropsWithChildren) => {
 				},
 				created_at: data?.created_at,
 				updated_at: data?.updated_at,
-			}
-			console.log('user -> ', user)
+			};
+			console.log("user -> ", user);
 
 			// setUser(user);
 

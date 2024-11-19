@@ -9,7 +9,7 @@ export default function ForgetPasswordPage() {
 	const [email, setEmail] = useState<string>();
 	const [errorEmail, setErrorEmail] = useState<string>();
 
-	if (!isAlreadyLoggedIn) return <Navigate to="/login" />;
+	if (isAlreadyLoggedIn) return <Navigate to="/profile" />;
 
 	function isValidEmail(email: string): boolean {
 		const regex = /\S+@\S+\.\S+/;
@@ -40,6 +40,7 @@ export default function ForgetPasswordPage() {
 				<form onSubmit={handleSubmit}>
 					<div className="form-group mb-4 mt-5">
 						<input
+							autoFocus
 							className="fs-5 form-control"
 							placeholder="Email to recover password"
 							minLength={8}
